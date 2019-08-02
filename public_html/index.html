@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+
+        <title>Hello, world!</title>
+    </head>
+    <body>
+        <!-- Took help from https://www.w3schools.com/css/css_navbar.asp -->
+        <div class="container" id="navadi">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About me! |<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                <a class="nav-link" href="#about">Courses  |<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">My hobbies   |<span class="sr-only">(current)</span></a>
+                    </li>
+                    </ul>
+                    <form method="POST">
+                    <button type="button" onclick="blast()" class="button button5">Click here for <b>RANDOM</b> stuff :p</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="row" id="slider">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                        <style>
+
+                            
+                        * {box-sizing: border-box;}
+                        body {font-family: Verdana, sans-serif;}
+                        .mySlides {display: none;}
+                        img {vertical-align: middle;}
+                        
+                        /* Slideshow container */
+                        .slideshow-container {
+                            max-width: 1000px;
+                            position: relative;
+                            margin: auto;
+                        }
+                        
+                        /* Caption text */
+                        .text {
+                            color: #f2f2f2;
+                            font-size: 15px;
+                            padding: 8px 12px;
+                            position: absolute;
+                            bottom: 8px;
+                            width: 100%;
+                            text-align: center;
+                        }
+                        
+                        /* Number text (1/3 etc) */
+                        .numbertext {
+                            color: #f2f2f2;
+                            font-size: 12px;
+                            padding: 8px 12px;
+                            position: absolute;
+                            top: 0;
+                        }
+                        
+                        /* The dots/bullets/indicators */
+                        .dot {
+                            height: 15px;
+                            width: 15px;
+                            margin: 0 2px;
+                            background-color: #bbb;
+                            border-radius: 50%;
+                            display: inline-block;
+                            transition: background-color 0.6s ease;
+                        }
+                        
+                        .active {
+                            background-color: #717171;
+                        }
+                        
+                        /* Fading animation */
+                        .fade {
+                            -webkit-animation-name: fade;
+                            -webkit-animation-duration: 5.5s;
+                            animation-name: fade;
+                            animation-duration: 5.5s;
+                        }
+                        
+                        @-webkit-keyframes fade {
+                            from {opacity: .4} 
+                            to {opacity: 1}
+                        }
+                        
+                        @keyframes fade {
+                            from {opacity: .7} 
+                            to {opacity: 1}
+                        }
+                        
+                        /* On smaller screens, decrease text size */
+                        @media only screen and (max-width: 300px) {
+                            .text {font-size: 11px}
+                        }
+                        </style>
+                        </head>
+                        <body>
+                        
+                    <!-- took help from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto -->
+                        
+                        <div class="slideshow-container">
+                        
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="a1.jpg" style="width:100%">
+                            <!-- <div class="text"></div> -->
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="a2.jpg" style="width:100%">
+                            <!-- <div class="text"></div> -->
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="a3.jpg" style="width:100%">
+                            <!-- <div class="text"></div> -->
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="a4.jpg" style="width:100%">
+                            <!-- <div class="text"></div> -->
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="a5.jpg" style="width:100%">
+                            <!-- <div class="text">Caption Two</div> -->
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="a6.jpg" style="width:100%">
+                            <!-- <div class="text">Caption Three</div> -->
+                        </div>
+                        
+                        
+                        </div>
+                        <br>
+                        
+                        <div style="text-align:center">
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                            <span class="dot"></span>    
+                        </div>
+                        
+                        <script>
+                        var slideIndex = 0;
+                        showSlides();
+                        
+                        function showSlides() {
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("dot");
+                            console.log(dots.length);
+                            for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) {slideIndex = 1}    
+                            for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex-1].style.display = "block";  
+                            dots[slideIndex-1].className += " active";
+                            setTimeout(showSlides, 2000); // Change image every 2 seconds
+                        }
+                        </script>
+                    <!-- <p>Some text..</p> -->
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <hr>
+            <div class="row" style="border: 2px" id="pane">
+                <div class="col">
+                    <h3>About me!</h3>
+                    <hr>
+                    
+                    <i> I am passionate about trying out new things! </i>I also like to document whatever I do and am always up for new challenges. 
+                The only time I lose is when I <b>don't</b> try. I believe in hardwork over talent.
+                    
+                </div>
+                <div class="col">
+                        <h3 id="about">Courses taken</h3>
+                        <hr>
+                        <ul>
+                            <li> <a  href="https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=CS%20725" target="_blank">Foundations of Machine Learning</a></li>
+                            <li><a  href="https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=CS%20635" target="_blank">Information Retrieval & Mining for Hypertext & the Web</a></li>
+                            <li><a  href="https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=CS%20618" target="_blank">Program Analysis</a></li>
+                            <li><a  href="https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=CS%20742" target="_blank">Foundations of Network Security and Cryptography</a></li>
+                            <li><a  href="https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=CS%20699" target="_blank">Software Lab</a></li>
+
+                          </ul>
+                    </div>
+                    <div class="col">
+                            <h3>My Hobbies</h3>
+                            <hr>
+                            <ul>
+                                <li>Coding</li>
+                                <li>Watching movies</li>
+                                <li>Listening music</li>
+                                <li>Interacting with like minded people</li>
+                                <li>Group outings</li>
+                                <li>Always up for new challenges</li>
+                              </ul>
+                        </div>
+            </div>
+        </div>
+<hr>
+
+<!-- took help from https://www.w3schools.com/html/html_tables.asp -->
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <table id="customers">
+                        <tr>
+                          <th>Degree</th>
+                          <th>College</th>
+                          <th>Score</th>
+                        </tr>
+                        <tr>
+                          <td>MTech</td>
+                          <td>Indian Institute of Technology Bombay</td>
+                          <td> AIR 60, GATE CS 2019</td>
+                        </tr>
+                        <tr>
+                          <td>BTech</td>
+                          <td>Shri Ramdeobaba College Of Engineering and Management</td>
+                          <td>GPA of 9.09</td>
+                        </tr>
+                        <tr>
+                          <td>HSC</td>
+                          <td>Hislop College</td>
+                          <td>82.15 %</td>
+                        </tr>
+                        <tr>
+                          <td>SSC</td>
+                          <td>St. Francis De Sales High School</td>
+                          <td>90.36 %</td>
+                        </tr>
+                        
+                        
+                      </table>
+                    </div>
+        </div>
+
+        <hr>
+     <p style="text-align: center" bg: #000000> <h4> Follow me here :</h4></p>
+        <hr>
+            <div class="container">
+            <div class="row">
+                
+                <div class="col">
+                    <a  href="https://www.facebook.com/profile.php?id=100005741560385" target="_blank"> <img src="fb.jpg" class="img-responsive" style="width:100%" alt="Image" ></a>
+                </div>  
+             
+                <div class="col">
+                    <a  href="https://www.quora.com/profile/Aditya-Jain-486" target="_blank"> <img src="quora.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+                </div>
+                <div class="col">
+                    <a  href="https://www.linkedin.com/in/aditya-jain-409318128/" target="_blank"><img src="linkdin.gif" class="img-responsive" style="width:100%" alt="Image"></a>
+                </div>
+                <div class="col">
+                    <a  href="https://github.com/markzuck24" target="_blank">  <img src="git.gif" class="img-responsive" style="width:150%" alt="Image"></a>
+                </div>
+                <div class="col">
+                    <a  href="https://www.youtube.com/watch?v=R-Mhd8vfwGI" target="_blank"> <img src="yt.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+                </div>
+                <div class="col">
+                    <a  href="https://www.cse.iitb.ac.in/page12" target="_blank">  <img src="iit.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+                </div>
+            <div class="col">
+                <a  href="https://www.hackerrank.com/jainaditya412" target="_blank"> <img src="hr.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+            </div>
+                <div class="col">
+                    <a href="https://www.codechef.com/users/markzuck" target="_blank"><img src="code.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+                </div>
+                    <div class="col">
+                        <a  href="https://gateoverflow.in/user/Markzuck" target="_blank">   <img src="go.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+                    </div>
+                    <div class="col">
+                        <a  href="https://gradeup.co/me" target="_blank"> <img src="gp.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
